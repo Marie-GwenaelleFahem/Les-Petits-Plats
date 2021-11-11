@@ -1,0 +1,191 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Header*/
+header {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    padding-top: 42px;
+    width: 268px;
+}
+/*End Header*/
+
+/*Search Section*/
+.search {
+    margin-top: 15px;
+}
+
+.searchBar {
+    height: 69px;
+    background: #E7E7E7;
+    border-radius: 5px;
+    display: flex;
+    padding-left: 20px;
+}
+
+.searchBar input {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    opacity: 0.25;
+    background: #E7E7E7;
+    width: 96%;
+    border: hidden;
+    color: black;
+}
+
+.searchBar input:active {
+    border-style: hidden;
+}
+
+button {
+    background: #E7E7E7;
+    border: none;
+}
+
+button i {
+    color: black;
+    font-size: x-large;
+}
+
+.categories {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+}
+
+.categories p {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.categories i {
+    color: #FFFFFF;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-top: 3px;
+}
+
+.ingredients {
+    background: #3282F7;
+    border-radius: 5px;
+    height: 60px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.devices {
+    background: #68D9A4;
+    border-radius: 5px;
+    height: 60px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.utensils {
+    background: #ED6454;
+    border-radius: 5px;
+    height: 60px;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*End Search Section*/
+
+/*Recipes Section*/
+.recipes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.lemonade {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.tuna {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.recipePic {
+    background-color: #C7BEBE;
+    width: 380px;
+    height: 178px;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.details {
+    background-color: #E7E7E7;
+    padding: 15px;
+}
+
+.details i {
+    line-height: 12px;
+    padding: 0 1em 0 8em;
+}
+
+.moreDetails {
+    background-color: #E7E7E7;
+    padding: 15px;
+}
+
+span {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.amount {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.amount ul {
+    padding: 0;
+    margin: 0;
+}
+
+.amount li {
+    list-style-type: none;
+}
+
+.making {
+    background-color: #E7E7E7;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+
+
+
