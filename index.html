@@ -18,7 +18,7 @@
         </header>
         <section class="search">
             <form action="" method="get" class="searchBar">
-                <input type="text" name="name" id="name" placeholder="Rechercher un ingrédient, appareil, ustensiles ou une recette" required></input>
+                <input type="text" name="name" id="searchInput" placeholder="Rechercher un ingrédient, appareil, ustensiles ou une recette" required></input>
                 <button><i class="fas fa-search"></i></button>
             </form>
             <div class="categories">    
@@ -28,74 +28,116 @@
             </div>
         </section>
         <section class="recipes">
-            <div class="lemonade">
+            <div class="item-plats">
                 <div class="recipePic"></div>
                 <div class="details">
-                    <span>Limonade de Coco</span>
-                    <i class="far fa-clock"></i><strong>10 min</strong>
-                </div>
-                <div class="moreDetails">
-                    <div class="amount">
-                        <ul>
-                            <li><strong>Lait de coco</strong>: 400ml</li>
-                            <li><strong>Jus de citron</strong>: 2</li>
-                            <li><strong>Crème de coco</strong>: 4 cuillères</li>
-                            <li><strong>Sucre</strong>: 20g</li>
-                            <li><strong>Glaçons</strong>: 2</li>
-                        </ul>
+                    <div class="detail-top">
+                        <span>Limonade de Coco</span>
+                        <i class="far fa-clock"></i><strong>10 min</strong>
                     </div>
-                    <div class="making">
-                        <p>Mettre les glaçons à votre goût<br> dans le blender, ajouter le lait,<br> la crème de coco, le jus de 2<br> citrons et le sucre. Mixer jusqu'à<br> avoir la consistence désirée</p>
+                    <div class="detail-bottom">
+                        <div class="amount">
+                            <ul>
+                                <li><strong>Lait de coco</strong>: 400ml</li>
+                                <li><strong>Jus de citron</strong>: 2</li>
+                                <li><strong>Crème de coco</strong>: 4 cuillères</li>
+                                <li><strong>Sucre</strong>: 20g</li>
+                                <li><strong>Glaçons</strong>: 2</li>
+                            </ul>
+                        </div>
+                        <div class="making">
+                            <p>Mettre les glaçons à votre goût<br> dans le blender, ajouter le lait,<br> la crème de coco, le jus de 2<br> citrons et le sucre. Mixer jusqu'à<br> avoir la consistence désirée</p>
+                        </div>
+                    </div>    
+                </div>
+            </div>
+            <div class="item-plats">
+                <div class="recipePic"></div>
+                <div class="details">
+                    <div class="detail-top">
+                        <span>Poisson cru à la tahitienne</span>
+                        <i class="far fa-clock"></i><strong>60 min</strong>
+                    </div>
+                    <div class="detail-bottom">
+                        <div class="amount">
+                            <ul>
+                                <li><strong>Thon Rouge (ou blanc)</strong>: 200g</li>
+                                <li><strong>Concombre</strong>: 1</li>
+                                <li><strong>Tomate</strong>: 2</li>
+                                <li><strong>Carotte</strong>: 1</li>
+                                <li><strong>Citron vert</strong>: 5</li>
+                                <li><strong>Lait de coco</strong>: 100ml</li>
+                            </ul>
+                        </div>
+                        <div class="making">
+                            <p>Découper le thon en dés, mettre<br> dans un plat et recouvrir de jus<br> de citron vert (mieux vaut<br> prendre un plat large et peu<br> profond). Laisser reposer au<br> réfrigérateur au moins 2 heures.<br>...</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="tuna">
+            <div class="item-plats">
                 <div class="recipePic"></div>
                 <div class="details">
-                    <span>Poisson cru à la tahitienne</span>
-                    <i class="far fa-clock"></i><strong>60 min</strong>
-                </div>
-                <div class="moreDetails">
-                    <div class="amount">
-                        <ul>
-                            <li><strong>Thon Rouge (ou blanc)</strong>: 200g</li>
-                            <li><strong>Concombre</strong>: 1</li>
-                            <li><strong>Tomate</strong>: 2</li>
-                            <li><strong>Carotte</strong>: 1</li>
-                            <li><strong>Citron vert</strong>: 5</li>
-                            <li><strong>Lait de coco</strong>: 100ml</li>
-                        </ul>
+                    <div class="detail-top">
+                        <span>Poulet coco réunionnais</span>
+                        <i class="far fa-clock"></i><strong>80 min</strong>
                     </div>
-                    <div class="making">
-                        <p>Découper le thon en dés, mettre<br> dans un plat et recouvrir de jus<br> de citron vert (mieux vaut<br> prendre un plat large et peu<br> profond). Laisser reposer au<br> réfrigérateur au moins 2 heures.<br>...</p>
+                    <div class="detail-bottom">
+                        <div class="amount">
+                            <ul>
+                                <li><strong>Poulet</strong>: 1</li>
+                                <li><strong>Lait de coco</strong>: 400ml</li>
+                                <li><strong>Coulis de tomate</strong>: 25cl</li>
+                                <li><strong>Oignon</strong>: 1</li>
+                                <li><strong>Poivron Rouge</strong>: 1</li>
+                                <li><strong>Huile d'olive</strong></li>
+                            </ul>
+                        </div>
+                        <div class="making">
+                            <p>Découper le poulet en<br> en morceaux, les faire dorer dans<br> une cocotte avec de l'huile<br> d'olive. Salez et poivrez. Une<br>  fois doré, laisser cuire en<br> ajoutant de l'eau. Au bout de 30<br>minutes, ajouter le coulis de<br> de tomate, ...</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="chicken">
+            <div class="item-plats">
                 <div class="recipePic"></div>
                 <div class="details">
-                    <span>Poulet coco réunionnais</span>
-                    <i class="far fa-clock"></i><strong>80 min</strong>
-                </div>
-                <div class="moreDetails">
-                    <div class="amount">
-                        <ul>
-                            <li><strong>Poulet</strong>: 1</li>
-                            <li><strong>Lait de coco</strong>: 400ml</li>
-                            <li><strong>Coulis de tomate</strong>: 25cl</li>
-                            <li><strong>Oignon</strong>: 1</li>
-                            <li><strong>Poivron Rouge</strong>: 1</li>
-                            <li><strong>Huile d'olive</strong></li>
-                        </ul>
+                    <div class="detail-top">
+                        <span>Salade de riz</span>
+                        <i class="far fa-clock"></i><strong>50 min</strong>
                     </div>
-                    <div class="making">
-                        <p>Découper le poulet en<br> en morceaux, les faire dorer dans<br> une cocotte avec de l'huile<br> d'olive. Salez et poivrez. Une<br>  fois doré, laisser cuire en<br> ajoutant de l'eau. Au bout de 30<br>minutes, ajouter le coulis de<br> de tomate, ...</p>
+                    <div class="detail-bottom">
+                        <div class="amount"></div>
+                        <div class="making"></div>
                     </div>
                 </div>
             </div>
-            <div></div>
-            <div></div>
-            <div></div>
+            <div class="item-plats">
+                <div class="recipePic"></div>
+                <div class="details">
+                    <div class="detail-top">
+                        <span>Tarte au thon</span>
+                        <i class="far fa-clock"></i><strong>45 min</strong>
+                    </div>
+                    <div class="detail-bottom">
+                        <div class="amount"></div>
+                        <div class="making"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="item-plats">
+                <div class="recipePic"></div>
+                <div class="details">
+                    <div class="detail-top">
+                        <span>Tarte aux pommes</span>
+                        <i class="far fa-clock"></i><strong>50 min</strong>
+                    </div>
+                    <div class="detail-bottom">
+                        <div class="amount"></div>
+                        <div class="making"></div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
     <script type="text/javascript" src="js/algo.js"></script>

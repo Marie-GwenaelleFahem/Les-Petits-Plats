@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     box-sizing: border-box;
@@ -118,31 +122,21 @@ button i {
 /*Recipes Section*/
 .recipes {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 20px;
 }
 
-.lemonade {
+.item-plats {
     font-family: Lato;
     font-style: normal;
     font-weight: 400;
-}
-
-.tuna {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 400;
-}
-
-.chicken {
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 400;
+    width: 32%;
+    margin-bottom: 25px;
 }
 
 .recipePic {
     background-color: #C7BEBE;
-    width: 325px;
     height: 178px;
     border-radius: 5px 5px 0px 0px;
 }
@@ -150,16 +144,30 @@ button i {
 .details {
     background-color: #E7E7E7;
     padding: 15px;
-}
-
-.details i {
-    line-height: 12px;
-    /*padding: 0 1em 0 8em;*/
+    min-height: 210px;
+    border-radius: 0 0 5px 5px;
 }
 
 .moreDetails {
     background-color: #E7E7E7;
     padding: 15px;
+    display: flex;
+}
+
+.detail-top {
+    display: flex;
+}
+
+.detail-top i {
+    line-height: 20px;
+    margin-right: 15px;
+    margin-left: auto;
+}
+
+.detail-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
 span {
@@ -192,6 +200,23 @@ span {
     font-size: 12px;
 }
 
+.making p {
+    margin: 0;
+}
 
+@media only screen and (min-width : 1824px) {
+    .container {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .item-plats {
+        font-family: Lato;
+        font-style: normal;
+        font-weight: 400;
+        width: 30%;
+        margin-bottom: 50px;
+    }
+}
 
 
