@@ -22,9 +22,18 @@
                 <button><i class="fas fa-search"></i></button>
             </form>
             <div class="categories">    
-                <div class="ingredients"><p>Ingredients</p><i class="fas fa-chevron-down"></i></div>
-                <div class="devices"><p>Appareil</p><i class="fas fa-chevron-down"></i></div>
-                <div class="utensils"><p>Ustensiles</p><i class="fas fa-chevron-down"></i></div>
+                <div class="ingredients"><p>Ingredients</p><button onclick="dropdownFunction()" class="dropbtn"><i class="fas fa-chevron-down"></i></button></div>
+                    <div class="dropdown" id="myDropdown">
+                        <input type="text" placeholder="Rechercher un ingrédient" id="myInput" onkeyup="filterFunction()">
+                        <a href="#Lait de coco">Lait de coco</a>
+                        <a href="#Jus de citron">Jus de citron</a>
+                        <a href="#Crème de coco">Crème de coco</a>
+                        <a href="#Sucre">Sucre</a>
+                        <a href="#Glaçons">Glaçons</a>
+                        <a href="#Tomate">Tomate</a>
+                    </div>
+                <div class="devices"><p>Appareil</p><button><i class="fas fa-chevron-down"></i></button></div>
+                <div class="utensils"><p>Ustensiles</p><button><i class="fas fa-chevron-down"></i></button></div>
             </div>
         </section>
         <section class="recipes">
@@ -32,11 +41,11 @@
                 <div class="recipePic"></div>
                 <div class="details">
                     <div class="detail-top">
-                        <span>Limonade de Coco</span>
+                        <span id="titleSearch">Limonade de Coco</span>
                         <i class="far fa-clock"></i><strong>10 min</strong>
                     </div>
                     <div class="detail-bottom">
-                        <div class="amount">
+                        <div class="amount" id="ingredientsSearch">
                             <ul>
                                 <li><strong>Lait de coco</strong>: 400ml</li>
                                 <li><strong>Jus de citron</strong>: 2</li>
@@ -45,7 +54,7 @@
                                 <li><strong>Glaçons</strong>: 2</li>
                             </ul>
                         </div>
-                        <div class="making">
+                        <div class="making" id="descriptionSearch">
                             <p>Mettre les glaçons à votre goût<br> dans le blender, ajouter le lait,<br> la crème de coco, le jus de 2<br> citrons et le sucre. Mixer jusqu'à<br> avoir la consistence désirée</p>
                         </div>
                     </div>    

@@ -58,6 +58,7 @@ img {
 button {
     background: #E7E7E7;
     border: none;
+    padding: 0;
 }
 
 button i {
@@ -86,6 +87,11 @@ button i {
     cursor: pointer;
     padding-left: 20px;
     padding-top: 3px;
+    font-size: initial;
+}
+
+.categories button {
+    color: #FFFFFF;
 }
 
 .ingredients {
@@ -96,6 +102,12 @@ button i {
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
+    /*display: inline-block;*/
+}
+
+.ingredients button {
+    background: #3282F7;
 }
 
 .devices {
@@ -108,6 +120,10 @@ button i {
     justify-content: center;
 }
 
+.devices button {
+    background: #68D9A4;
+}
+
 .utensils {
     background: #ED6454;
     border-radius: 5px;
@@ -117,6 +133,51 @@ button i {
     align-items: center;
     justify-content: center;
 }
+
+.utensils button {
+    background: #ED6454;
+}
+
+.dropdown {
+    font-family: Lato;
+    display: none;
+    position: absolute;
+    background: #3282F7;
+    min-width: 230px;
+    overflow: auto;
+    z-index: 1;
+}
+
+.dropdown a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+#myInput {
+    box-sizing: border-box;
+    background-position: 14px 12px;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    padding: 14px 20px 12px 45px;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    background: #3282F7;
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.show {
+    display: block;
+}
+
+.dropbtn{
+    -webkit-animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
 /*End Search Section*/
 
 /*Recipes Section*/
@@ -206,7 +267,7 @@ span {
 
 @media only screen and (min-width : 1824px) {
     .container {
-        width: 90%;
+        width: 65%;
         margin-left: auto;
         margin-right: auto;
     }
